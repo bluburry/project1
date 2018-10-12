@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
+
+<!--To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
-and open the template in the editor
-test commit
--->
+and open the template in the editor.-->
+
 <!DOCTYPE html>
 <html>
-    
-        <title>Movies</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style/movies.css">
-        <link rel="stylesheet" type="text/css" href="style/search.css">
-        <script id="movie-template" type="text/html">
+
+    <title>Movies</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/movies.css">
+    <link rel="stylesheet" type="text/css" href="style/search.css">
+    <link rel="stylesheet" type="text/css" href="style/layout.css">
+    <script id="movie-template" type="text/html">
         <div class='movie'>
             <img src='{{photo}}'>
             <div class='title'>{{title}}</div>
@@ -28,21 +28,28 @@ test commit
     <script src="data/data.js"></script>
     <script src="script/movies.js"></script>
 
-<body> 
-
-    <div class="icons">
-        <select id="combo_box">
-            <option>rating</option>
-            <option>year</option>
-        </select>
-         <input class="text" id="field" type="text">
-        <button id="search_button"> Search </button>
-        <div id="suggestions_box" class="suggestions"></div>
-        
-        <img id="list_icon" title="list" src="images/list.jpg">
-        <img id="grid_icon" title="grid" src="images/grid_pressed.jpg">
-    </div>
-    <div id="movies" class="grid">
-    </div>
-</body>
+    <body>
+        <div class="header">
+            <img id="logo_img" src="images/movie.png" alt="logo">
+            <h1 class="header_title">Rent A Movie</h1>
+            <div class="search">
+                <input id="field" type="text" placeholder="Search for movies here">
+                <button id="search_button"> Search </button>
+                <div id="suggestions_box" class="suggestions"></div>
+            </div>
+        </div>
+        <div class="sub_header">
+        <div class="icons">
+            <label id="label"for="combo_box">Search By: </label>
+            <select id="combo_box">
+                <option>rating</option>
+                <option>year</option>
+            </select> 
+            <img id="list_icon" title="list" src="images/list.jpg">
+            <img id="grid_icon" title="grid" src="images/grid_pressed.jpg">
+        </div>
+        </div>
+        <div id="movies" class="grid">
+        </div>
+    </body>
 </html>

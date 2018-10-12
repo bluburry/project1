@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Oleo;
+    src: url(../fonts/Oleo.woff);
+}
+
+.header{
+    background-color:#edeeef;
+    position:fixed;
+    width:100%;
+    margin:-20px -10px 0 -10px;
+    z-index: 10;
+    border-bottom: solid #C0C0C6 1px;
+}
+.header_title{
+    font-family: 'Oleo';
+    float:left;
+    margin-left:7px;
+}
+.search{
+    float:left;
+    margin-top:35px;
+    margin-left:35px;
+}
+#logo_img{
+    height:65px;
+    width:65px;
+    float:left;
+    margin:10px;
+}
+#label{
+    margin-left:15px;
+}
+#combo_box{
+    width:75px;
+}
+
+
+

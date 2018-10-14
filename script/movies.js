@@ -14,6 +14,8 @@ function Controller(data) {
     this.list_icon="#list_icon";
     this.combo_box="#combo_box";
     this.movie_template="#movie-template";
+    this.hd_movie =".HD";
+    this.rating = ".rating";
     
     
     //bind some events
@@ -30,11 +32,36 @@ function Controller(data) {
         self.sort_movies.call(self);
     };
     
+    
     $(this.grid_icon).on("click", make_grid_function);
     $(this.list_icon).on("click", make_list_function);
     $(this.combo_box).on('change',sort_movies);
     
     this.load_movies();
+}
+
+Controller.prototype.display_movies = function () {
+    var hd = $(this.hd_movie);
+    var ratings = $(this.rating);
+    
+
+
+    for (var i = 0; i < hd.length; i++) {
+        if (hd[i].innerHTML == "true")
+            hd[i].innerHTML = "<img id='hdMovie' src='images/HD.png'>";
+        
+        var score = ratings[i].innerHTML;
+        ratings[i].innerHTML="Rating ";
+        
+        for (var j = 0; j < score; j++) {
+            ratings[i].innerHTML += "<img id='goldStar' src='images/gold_star.png'>"
+        }
+        for(var j = 0; j< 5-score;j++){
+            ratings[i].innerHTML += "<img id='regularStar' src='images/regular_star.png'>"
+        }
+
+    }
+
 }
 
 Controller.prototype.load_movies = function() {
@@ -43,6 +70,7 @@ Controller.prototype.load_movies = function() {
     var html_maker = new htmlMaker(template); //create an html Maker
     var html = html_maker.getHTML(this.movies); //generate dynamic HTML based on the data
     $(this.movies_div).html(html);
+    this.display_movies();
 };
 
 Controller.prototype.sort_movies=function(){

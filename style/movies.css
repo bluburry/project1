@@ -57,31 +57,50 @@
 .grid .year{
    color: white;
 }
+.grid div.description{
+    display:none;
+}
 
 .list {
     position:relative;
+    margin-top:110px;
+    height:260px;
 }
 
 .list .movie{
     position:relative;
     display:block;
-    width:70%;
-    height:200px;
+    width:220px;
+    height:220px;
     padding:10px;
     border-bottom:lightgray 1px dotted;
 }
 
-.list div.description, .list .year{
+.list .year{
+    position:absolute;
+    top:20px;
+    color: black;
+    margin-left:250px;
+    color:gray;
+    font-size:15px;
+
+}
+
+.list .title{
     position:absolute;
     top:10px;
     color: black;
-    left:250px;
-    font-size:25px;
+    margin-left:250px;
+    font-size:18px;
+}
+.list div.description{
+    line-height:1.5;
+    width:450px;
+    background-color: rgb(236,255,255);
+    font-size:15px;
+    margin-left:250px;
 }
 
-.list .year{
-    color:gray;
-    font-size:15px;  
-}
+
 
 

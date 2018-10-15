@@ -19,7 +19,7 @@ input.text{
 div.suggestions{
     position:absolute;
     top:25px;
-    z-index:50;
+/*    z-index:50;*/
     border-color:lightgray;
     background-color:white;
     border-style:solid;
@@ -37,16 +37,19 @@ div.sub_suggestions:hover{
     background-color:gainsboro;
 }
 #search_button{
+    cursor:pointer;
     border-radius: 0 5px 5px 0;
     outline:none;
     margin-left:-2%;
     color:white;
     background-color: #0099ff;
     border: solid #0099ff 1px;
+/*    z-index:1;*/
 }
 #field{
    width:300px;
    border-radius: 3px 0 0 3px;
    border: solid grey 1px;
+/*   z-index:1;*/
    
 }

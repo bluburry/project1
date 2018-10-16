@@ -30,7 +30,11 @@ div.suggestions{
 }
 
 div.sub_suggestions{
-    width:150px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width:450;
+  padding:3px;
 }
 
 div.sub_suggestions:hover{
@@ -44,12 +48,16 @@ div.sub_suggestions:hover{
     color:white;
     background-color: #0099ff;
     border: solid #0099ff 1px;
-/*    z-index:1;*/
+    width:65px
+
 }
 #field{
-   width:300px;
+   width:410px;
    border-radius: 3px 0 0 3px;
    border: solid grey 1px;
-/*   z-index:1;*/
    
+}
+#suggestions_box{
+    width:470px;
+    margin-top:29px;
 }

@@ -56,6 +56,12 @@ div.sub_suggestions:hover{
    border-radius: 3px 0 0 3px;
    border: solid grey 1px;
    
+   
+}
+#field:focus{
+   width:410px;
+   border-radius: 3px 0 0 3px;
+   height:14px;
 }
 #suggestions_box{
     width:470px;

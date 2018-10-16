@@ -70,8 +70,9 @@
 
 .list {
     position:relative;
-    margin-top:110px;
+    margin-top:105px;
     height:260px;
+    
 }
 
 .list .titlebox{
@@ -87,6 +88,8 @@
     height:220px;
     padding:10px;
     border-bottom:lightgray 1px dotted;
+    margin-left:10px;
+    
 }
 
 .list .year{

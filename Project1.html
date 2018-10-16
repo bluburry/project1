@@ -15,8 +15,10 @@ and open the template in the editor.-->
     <script id="movie-template" type="text/html">
         <div class='movie'>
             <img src='{{photo}}'>
+            <div class='titlebox'>
             <div class='title'>{{title}}</div>
-            <div class='year'>{{year}}</div>
+            <div class='year'><span>(</span>{{year}}<span>)</span></div>
+            </div>
             <div class='starring'>{{starring}}</div>
             <div class='HD'>{{HD}}</div>
             <div class='description'>{{description}}</div>
@@ -42,8 +44,8 @@ and open the template in the editor.-->
         <div class="icons">
             <label id="label"for="combo_box">Search By: </label>
             <select id="combo_box">
-                <option>rating</option>
-                <option>year</option>
+                <option>Rating</option>
+                <option>Year</option>
             </select> 
             <img id="list_icon" title="list" src="images/list.jpg">
             <img id="grid_icon" title="grid" src="images/grid_pressed.jpg">

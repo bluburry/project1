@@ -41,14 +41,27 @@
     left:15px;
     padding: 0;
     border-radius: 5px 5px 5px 5px;
+    border:none;
 }
 .list #goldStar, .list #regularStar{
     position:relative;
-    height:10px;
-    width:10px;
+    height:20px;
+    width:20px;
+    padding:0;
+    border: none;
+    margin-bottom:-4.5px;
+    
 }
-.grid #goldStar, .grid #regularStar{
+.grid #goldStar, .grid #regularStar, .grid #movie_detail{
     display:none;
+}
+#movie_detail{
+    font-weight: bold;
+}
+.rating{
+    position:relative;
+    left:200px;
+    width:600px;
 }
 
 

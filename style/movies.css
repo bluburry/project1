@@ -42,21 +42,28 @@
     height: 200px;
 }
 
-.grid .title {
+.titlebox {
     position:absolute;
     left:6px;
     bottom:-5px;
-    height:35px;
+    height:40px;
     width:200px;
     background-color:rgba(0,0,0,0.3);
-    color:white;
-    line-height: 35px;
     text-align: center;
 }
-
-.grid .year{
-   color: white;
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
 }
+.grid .title, .grid .year{
+    font-size:15px;
+    color:white;
+}
+.grid .title{
+    margin-top:2.5px;
+}
+
+
 .grid div.description{
     display:none;
 }
@@ -67,6 +74,12 @@
     height:260px;
 }
 
+.list .titlebox{
+     visibility: hidden;
+}
+.list .title, .list .year{
+    visibility: visible;
+}
 .list .movie{
     position:relative;
     display:block;

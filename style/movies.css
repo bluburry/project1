@@ -94,9 +94,9 @@
 
 .list .year{
     position:absolute;
-    top:20px;
+    top:-210px;
     color: black;
-    margin-left:250px;
+    left:500px;
     color:gray;
     font-size:15px;
 
@@ -104,10 +104,11 @@
 
 .list .title{
     position:absolute;
-    top:10px;
+    top:-210px;
     color: black;
-    margin-left:250px;
+    left: 250px;
     font-size:18px;
+    width:250px;
 }
 .list div.description{
     line-height:1.5;

@@ -1,8 +1,5 @@
 $(document).ready(function () {
     var controller = new Controller(movies["movies"]);
-    //not sure why the commeneted out event listeners below aren't working like they should, the second set of listeners works for some reason
-//   $("#search_button").on('click', search_movies(movies["movies"]), true);
-//   $("#field").on('keyup', search_movies(movies["movies"]), false);
     $("#search_button").on('click', function () {
         search_movies(movies["movies"], true);
     }

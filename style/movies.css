@@ -48,9 +48,10 @@
     bottom:-5px;
     height:40px;
     width:200px;
-    background-color:rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.4);
     text-align: center;
 }
+
 .title{
     font-weight: bold;
     text-transform: uppercase;
@@ -72,7 +73,6 @@
     position:relative;
     margin-top:105px;
     height:260px;
-    
 }
 
 .list .titlebox{
@@ -99,24 +99,58 @@
     left:500px;
     color:gray;
     font-size:15px;
+    text-align: left;
 
 }
 
 .list .title{
     position:absolute;
-    top:-210px;
+    top:-215px;
     color: black;
     left: 250px;
     font-size:18px;
     width:250px;
+    text-align: left;
 }
+
+
 .list div.description{
     line-height:1.5;
     width:450px;
     background-color: rgb(236,255,255);
     font-size:15px;
     margin-left:250px;
+    margin-top:60px;
 }
+
+.list .starring{
+    visibility:visible;
+    position:absolute;
+    top:20px;
+    color: black;
+    left: 255px;
+    font-size:15px;
+    width:250px;
+    text-align: left;
+}
+.grid .movie:hover .starring{
+    position:absolute;
+    left:6px;
+    bottom:-5px;
+    height:40px;
+    width:196px;
+    padding-left: 4px;
+    background-color:rgba(0,0,0,0.7);
+    text-align: left;
+    color:white;
+    visibility:visible;
+}
+
+.grid .movie:hover .titlebox{
+    height:120px;
+    background-color:rgba(0,0,0,0.6);
+}
+
 
 
 

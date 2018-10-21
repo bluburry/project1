@@ -36,7 +36,7 @@
 #label{
     margin-left:15px;
 }
-//combo box styling
+/*combo box styling*/
 #combo_box{
     width:75px;
 }
@@ -75,20 +75,6 @@
     top:50px;
     left:250px;
     width:600px;
-}
-/*responsive css*/
-@media all and (min-width: 470px){
-    .container {
-                max-width: 538px;
-                }
-            section {
-                float: left;
-                width: 63.197026%;
-                }
-            aside {
-                float: right;
-                width: 29.3680297%;
-                }
 }
 
 

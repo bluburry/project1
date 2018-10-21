@@ -16,6 +16,8 @@
     cursor:pointer;
 }
 
+
+//---DISPLAY FOR GRID VIEW---
 .grid {
     position:relative;
 }
@@ -69,6 +71,28 @@
     display:none;
 }
 
+//Show starring on mouse hover
+.grid .movie:hover .starring{
+    position:absolute;
+    left:6px;
+    bottom:-5px;
+    height:40px;
+    width:196px;
+    padding-left: 4px;
+    background-color:rgba(0,0,0,0.7);
+    text-align: left;
+    color:white;
+    visibility:visible;
+}
+
+//Move title for mouse hover
+.grid .movie:hover .titlebox{
+    height:120px;
+    background-color:rgba(0,0,0,0.6);
+}
+
+
+//---DISPLAY FOR LIST VIEW---
 .list {
     position:relative;
     margin-top:105px;
@@ -132,23 +156,6 @@
     font-size:15px;
     width:250px;
     text-align: left;
-}
-.grid .movie:hover .starring{
-    position:absolute;
-    left:6px;
-    bottom:-5px;
-    height:40px;
-    width:196px;
-    padding-left: 4px;
-    background-color:rgba(0,0,0,0.7);
-    text-align: left;
-    color:white;
-    visibility:visible;
-}
-
-.grid .movie:hover .titlebox{
-    height:120px;
-    background-color:rgba(0,0,0,0.6);
 }
 
 

@@ -17,7 +17,7 @@
 }
 
 
-//---DISPLAY FOR GRID VIEW---
+/*---DISPLAY FOR GRID VIEW---*/
 .grid {
     position:relative;
 }
@@ -71,7 +71,7 @@
     display:none;
 }
 
-//Show starring on mouse hover
+/*Show starring on mouse hover*/
 .grid .movie:hover .starring{
     position:absolute;
     left:6px;
@@ -85,14 +85,14 @@
     visibility:visible;
 }
 
-//Move title for mouse hover
+/*Move title for mouse hover*/
 .grid .movie:hover .titlebox{
     height:120px;
     background-color:rgba(0,0,0,0.6);
 }
 
 
-//---DISPLAY FOR LIST VIEW---
+/*---DISPLAY FOR LIST VIEW---*/
 .list {
     position:relative;
     margin-top:105px;

@@ -1,9 +1,10 @@
+/*import custom font*/
 @font-face {
     font-family: Oleo;
     src: url(../fonts/Oleo.woff);
 }
 
-
+/*header sytling*/
 .header{
     background-color:#edeeef;
     position:fixed;
@@ -13,16 +14,19 @@
     border-bottom: solid #C0C0C6 1px;
     
 }
+/*header font styling*/
 .header_title{
     font-family: 'Oleo';
     float:left;
     margin-left:7px;
 }
+/*search styling*/
 .search{
     float:left;
     margin-top:35px;
     margin-left:35px;
 }
+/*movie logo styling*/
 #logo_img{
     height:65px;
     width:65px;
@@ -32,9 +36,11 @@
 #label{
     margin-left:15px;
 }
+//combo box styling
 #combo_box{
     width:75px;
 }
+/*hd movie image*/
 #hdMovie{
     height: 30px;
     width: 40px;
@@ -44,6 +50,7 @@
     border-radius: 5px 5px 5px 5px;
     border:none;
 }
+/*star styling for list*/
 .list #goldStar, .list #regularStar{
     position:relative;
     height:20px;
@@ -54,19 +61,22 @@
     
     
 }
+/*star styling for grid*/
 .grid #goldStar, .grid #regularStar, .grid #movie_detail{
     display:none;
 }
+
 #movie_detail{
     font-weight: bold;
 }
+/*ratings div*/
 .rating{
     position:relative;
     top:50px;
     left:250px;
     width:600px;
 }
-
+/*responsive css*/
 @media all and (min-width: 470px){
     .container {
                 max-width: 538px;

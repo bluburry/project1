@@ -9,14 +9,14 @@ and open the template in the editor.-->
 
     <title>Movies</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //For possible mobile view
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--For possible mobile view-->
     
-    //---STYLE SHEETS---
+    <!---STYLE SHEETS--->
     <link rel="stylesheet" type="text/css" href="style/movies.css">
     <link rel="stylesheet" type="text/css" href="style/search.css">
     <link rel="stylesheet" type="text/css" href="style/layout.css">
     
-    //Sets up movie display with photo, title, year, starring, rating, description, and HD through movie template
+    <!--Sets up movie display with photo, title, year, starring, rating, description, and HD through movie template-->
     <script id="movie-template" type="text/html">
         <div class='movie'>
             <img src='{{photo}}'>
@@ -32,13 +32,13 @@ and open the template in the editor.-->
         </div> 
     </script>
     
-    //---SCRIPTS- htmlMaker and data---
+    <!---SCRIPTS- htmlMaker and data--->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="script/htmlMaker.js"></script>
     <script src="data/data.js"></script>
     <script src="script/movies.js"></script>
 
-    //HEADER
+    <!--HEADER-->
     <body>
         <div class="header">
             <img id="logo_img" src="images/movie.png" alt="logo">
@@ -50,7 +50,7 @@ and open the template in the editor.-->
             </div>
         </div>
         
-        //Combo box for searching by year or rating
+        <!--Combo box for searching by year or rating-->
         <div class="sub_header">
         <div class="icons">
             <label id="label"for="combo_box">Search By: </label>
@@ -60,7 +60,7 @@ and open the template in the editor.-->
                 <option>Year</option>
             </select> 
             
-            //List or grid buttons
+            <!--List or grid buttons-->
             <img id="list_icon" title="list" src="images/list.jpg">
             <img id="grid_icon" title="grid" src="images/grid_pressed.jpg">
         </div>

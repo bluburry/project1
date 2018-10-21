@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : Oct 9, 2018, 4:50:40 PM
     Author     : jayhixson
 */
-
+/*search text*/
 input.text{
     color:gray;
     border-width:1px;
@@ -15,11 +15,10 @@ input.text{
     border-style: solid;
     width: 150px;
 }
-
+/*suggestions box*/
 div.suggestions{
     position:absolute;
     top:25px;
-/*    z-index:50;*/
     border-color:lightgray;
     background-color:white;
     border-style:solid;
@@ -28,7 +27,7 @@ div.suggestions{
     overflow:auto;
     display:none;
 }
-
+/*suggestion items*/
 div.sub_suggestions{
   overflow-x: auto;
   overflow-y: hidden;
@@ -36,10 +35,11 @@ div.sub_suggestions{
   width:450;
   padding:3px;
 }
-
+/*hover over suggestions*/
 div.sub_suggestions:hover{
     background-color:gainsboro;
 }
+/*search button css*/
 #search_button{
     cursor:pointer;
     border-radius: 0 5px 5px 0;
@@ -51,6 +51,7 @@ div.sub_suggestions:hover{
     width:65px
 
 }
+/*input field*/
 #field{
    width:410px;
    border-radius: 3px 0 0 3px;
@@ -58,11 +59,13 @@ div.sub_suggestions:hover{
    
    
 }
+/*field focus styling*/
 #field:focus{
    width:410px;
    border-radius: 3px 0 0 3px;
    height:14px;
 }
+/*suggestion box css*/
 #suggestions_box{
     width:470px;
     margin-top:29px;
